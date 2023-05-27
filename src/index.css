@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+/* background color : #761D35 */
+/* text color : #952140 */
+
+* {
+    color: #fff ;
+    font-family: 'Noto Sans TC' , sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    margin: 0;
+    padding: 0;
 }
+
+.app{
+    background-color: #761D35;
+    /* background-color */
+
+    display: flex;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    bottom: 30px;
+}
+
+input{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+      rgba(0, 0, 0, 0.05) 0 -12px 30px,
+      rgba(0, 0, 0, 0.05) 0 4px 6px,
+      rgba(0, 0, 0, 0.05) 0 12px 3px,
+      rgba(0, 0, 0, 0.05) 0 -3px 5px;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    /* padding: 10px; */
+    margin: 10px; 
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+
+}
+
+.feed{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 0;
+}
+
+.feed li{
+    display: flex;
+    background-color: #952140;
+    overflow-wrap: break-word;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0px 0;
+}
+
+.feed li.li1{
+
+    background-color: #761D35;  
+    justify-content: flex-end;
+    align-items:flex-end;
+    /* background-color */
+
+}
+
+
+.feed p{
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    text-align: left;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    order : 1;
+}
+
+.feed p.role{
+    /* min-width: 15%; */
+    order: 2;
+    padding-left : 10%;
+}
+
+.feed p.role1{
+    min-width: 15%;
+    order: 1;
+    /* padding-left : 10%; */
+}
+
